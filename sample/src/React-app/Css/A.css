@@ -1,0 +1,47 @@
+/* TestimonialCarousel.css */
+.testimonial-carousel {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  .card {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .card.active {
+    background-color: #e0e0e0; /* Highlight the selected card */
+  }
+  
+  .carousel-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #999;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #333;
+  }
+  

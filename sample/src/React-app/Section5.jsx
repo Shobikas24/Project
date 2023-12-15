@@ -22,7 +22,7 @@ function Section5(){
             </Row>
             <Row className="Section5image-container">
               <Col
-                className="Section5row2-Col"
+                className="Section5row2-Col "
                 xs={12}
                 md={6}
                 lg={4}
@@ -36,9 +36,11 @@ function Section5(){
                   </div>
                 </div>
               </Col>
-              <Col className="Section5row2-Col" xs={12} md={6} lg={4}>
+              <Col className="Section5row2-Col " xs={12} md={6} lg={4}>
+              
                 <img src={Img4} alt="image3" className="Image3" />
-                <div className="overlay">
+                
+                <div className="overlay ">
                   <div className="Section5text-container2">
                     <h5> Portrait Photo</h5>
                     <p>Lorem Ipsum dolor sit amet</p>
