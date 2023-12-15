@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+.Section6 {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Section6-card {
+  width: 80%;
+  height: 550px;
+}
+.Section6card-body {
+  margin-left: 50px;
+  width: 90%;
+}
+.Section6-p {
+  margin-top: 40px;
+}
+.Section6-card h1 strong {
+  font-weight: bolder;
+  font-size: 45px;
+  color: #263d5a;
+}
+.Section6card-title {
+  margin-top: 20px;
+  color: #263d5a;
+}
+.Section6title-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.progressbar-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #263d5a;
+}
+.progress {
+  border: none;
+  outline: none;
+  height: 8px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  margin-top: -6px;
+}
+.progress-bar {
+  background-color: #a148ff;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 995px) {
+  .Section6-card {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Section6card-body {
+    width: 100%;
+    margin-left: -3px;
+  }
+  @media screen and (max-width:620px) {
+    .Section6-p {
+      text-align: center;
+      margin-top: -10px;
+    }
+    .Section6card-body h1 strong {
+      font-size: 30px;
+      text-align: center;
+    }
+    @media screen and (max-width: 320px) {
+      .Section6-card {
+        height: 640px;
+      }
+      .Section6card-body h1 strong {
+        font-size: 25px;
+      }
+    }
+  }
+}
