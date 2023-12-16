@@ -9,12 +9,13 @@
 .testimonial-carousel {
   max-width: 86%;
   margin: auto;
-  margin-top:15%;
+  margin-top:10%;
   margin-bottom: 10%;
 }
 
 .row {
   display: flex;
+  text-align: center;
 }
 
 .col {
@@ -23,14 +24,18 @@
 
 .card {
   width:100%;
-  margin: 20px;
+  margin:20px;
 
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: background-color 0.3s ease-in-out;
 }
-
+#Section4-img
+{
+  width: 100%;
+  height:90%
+}
 .card.active {
   background-color: #e0e0e0; /* Highlight the selected card */
 }
