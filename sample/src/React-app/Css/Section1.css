@@ -9,7 +9,8 @@
 .Section1-Col2 {
   max-width: 50%;
 }
-.Section1-card {
+.Section1-card 
+{
   width: 115%;
   margin: 0 auto;
   height: 490px;

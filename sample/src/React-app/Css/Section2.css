@@ -128,7 +128,8 @@
   .Section2-container {
     margin-top: 100% !important;
   }
-  .Section2 {
+  .Section2 
+  {
     height: 1400px !important;
   }
 }

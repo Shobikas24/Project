@@ -36,7 +36,8 @@
   align-items: center;
   justify-content: center;
 }
-.Section4-card {
+.Section4-card
+ {
   max-width: 100%;
   height: 500px;
   background: transparent;
