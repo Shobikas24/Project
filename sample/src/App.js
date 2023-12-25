@@ -1,11 +1,11 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TestimonialCarousel from './React-app/Appl';
+import Home from "./React-app/Home";
 function App() {
   return (
     <div className="App">
-<TestimonialCarousel/>
+<Home/>
     </div>
   );
 }

@@ -7,95 +7,120 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lexend", sans-serif;
-
 }
-
-.Section4 {
-  max-width: 100%;
-  margin-top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.2);
-  height: 800px;
-  position: relative;
-}
-.Section4-container {
-  align-content: center;
-  position: absolute;
-}
-.Section4text-container {
-  text-align: center;
-  margin-top: 100px;
-  color: #263d5a;
-
-}
-.Section4-Row {
-  max-width: 90%;
-  margin-left: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Section4-card
- {
-  max-width: 100%;
-  height: 500px;
-  background: transparent;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 30px;
-  border: none;
-  color: #263d5a;
-
-}
-.card-img
+.Section4
 {
-    width: 60%;
-    height: 40%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0 auto;
-    margin-top: 20px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3);
 }
-.Section4card-body {
-  margin: 0 auto;
-  align-items: center;text-align: center;
-}
-.Section4-card h2 strong
- {
-  font-size: 1.7rem;
 
- }
-.Section4card-button {
-  padding: 10px 20px;
+.testimonial-carousel {
+  max-width: 86%;
+  margin: auto;
+  margin-top:10%;
+  margin-bottom: 10%;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+}
+
+.col {
+  flex: 1;
+}
+
+.card {
+  width:100%;
+  margin:20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #263d5a;
+  border: none;
   border-radius: 30px;
-  margin-left: 0px;
-  margin-top: 10px;
+}
+.text1
+{
+  font-size: 1.3rem;
+  color: #263d5a;
+}
+.text2
+{
+  color: #263d5a;
+  padding: 10px;
+}
+.Section4card-title
+{
+  font-size: 4.4rem;
+  line-height: 1.1;
+}
+.Section4card-subtitle
+{
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.card.active {
+  background-color:white; 
+}
+.Section4-button
+{
+  background-color: #a148ff;
+  background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+  padding: 1rem 1rem;
+  width: 40%;
+  border-radius: 30px;
   color: white;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
   font-style: normal;
-  background-color: #a148ff;
-  background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+  margin-bottom: 20px;
 }
-.Section4button-container:hover {
+.Section4-button:hover{
   transform: translateY(-3px);
   transition: all 0.3s;
   border-color: #0a53be;
 }
-.Section4-card h1 strong
- {
-  font-weight: bold;
-  font-size: 4rem;
- }
+.Section4-button:focus {
+  outline: 2px solid blue; 
+}
 
- /* Media query */
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
- @media screen and (max-width:430px)
- {
-  #carso
+.indicator {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color:white;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+}
+
+/* Media Query */
+
+@media screen and (max-width:768px){
+  .card
   {
-    min-width: 110%;
-  }  
- }
+    margin-left: -10px;
+    width: 104%;
+  }
+  
+}
+@media screen and (max-width:550px){
+  .card,.col
+  {
+    min-width:100%;
+  }
+}

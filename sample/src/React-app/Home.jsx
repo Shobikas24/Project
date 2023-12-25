@@ -1,6 +1,6 @@
 import Background5 from "./images/background5.jpg";
 
-
+import TestimonialCarousel from "./Section4";
 import Section7 from "./Section7";
 import Section8 from "./Section8";
 import Header from "./Navbar";
@@ -39,7 +39,7 @@ function Home() {
 
         {/* Section4 our prising */}
 
-<Section4/>
+<TestimonialCarousel/>
         {/* Section5 image and text*/}
         <Section5/>
         {/* Section6 */}

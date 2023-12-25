@@ -1,139 +1,102 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import "./Css/Section4.css";
+import bird from "./images/bird.PNG";
+import dog from "./images/dog.png";
+import nature from "./images/nature.jpg";
 import Background4 from "./images/background4.jpg";
-import Bird from "./images/bird.PNG";
-import Dog from "./images/dog.png";
-import Girl from "./images/girl.png";
-import './Css/Section4.css';
 
-function Section4() {
-  const slickSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+const testimonials = [
+  {
+    id: 1,
+    imagesrc: bird,
+    title: "$39",
+    subtitle: "start",
+    content:
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus sapien pellentesque.",
+    button: "Buy Now",
+  },
+  {
+    id: 2,
+    imagesrc: dog,
+    title: "$59",
+    subtitle: "Basic",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus sapien pellentesque.",
+    button: "Buy Now",
+  },
+  {
+    id: 3,
+    imagesrc: nature,
+    title: "$89",
+    subtitle: "Pro",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu risus sapien pellentesque.",
+    button: "Buy Now",
+  },
+];
+
+const TestimonialCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000); // Change slide every 5 seconds (adjust as needed)
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleIndicatorClick = (index) => {
+    setCurrentIndex(index);
   };
 
   return (
     <div
-      className="Section4 "
+      className="Section4 w-100 h-100 bg-no-repeat d-flex align-items-center justify-content-center"
       style={{ backgroundImage: `url(${Background4})` }}
     >
-      <Container fluid className="Section4-container">
-        <Row className="Section4text-container">
-          <h5>OUR PRICING</h5>
-          <h2>
-            <strong>Lorem ipsum dolor sit amet consectetur.</strong>
-          </h2>
-        </Row>
-        <Row className="Section4-Row" style={{ marginTop: "20px" }}>
-          <Col xs={12} md={8} lg={6} className="mx-auto">
-            <Slider {...slickSettings} className="slick-slider">
-              {/* First Pricing Option */}
-              <div>
-                <Card className="Section4-card">
-                  <Card.Img
-                    variant="top"
-                    src={Bird}
-                    className="card-img img-thumbnail "
-                  />
-                  <Card.Body className="Section4card-body">
-                    <Card.Title>
-                      <h1>
-                        <strong>$39</strong>
-                      </h1>
-                    </Card.Title>
-                    <Card.Subtitle>
-                      <h2>
-                        <strong>Start</strong>
-                      </h2>
-                    </Card.Subtitle>
-                    <Card.Text>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Ut eu risus sapien pellentesque.
-                      </p>
-                    </Card.Text>
-                    <div className="Section4button-container">
-                      <Button className="Section4card-button">Buy Now</Button>
-                    </div>
-                  </Card.Body>
-                </Card>
+      <div className="testimonial-carousel " >
+        <div className="row">
+        <h3 className="text1">OUR PRICING</h3>
+              <h2 className="text2"><strong>Lorem ipsum dolor sit amet consectetur.</strong></h2>
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.id}
+              className="col" style={{borderStyle:"dotted"}}
+              xs={12} md={6} lg={4}
+            >
+             
+              <div className={`card ${index === currentIndex ? "active" : ""}`}>
+                <img
+                  src={testimonial.imagesrc}
+                  alt="img" id="Section4-img"
+                  className="img-thumbnail w-100 "
+                  style={{ height: "200px",borderRadius:"30px" }} 
+                />
+                
+                <h1 className="Section4card-title"><strong>{testimonial.title}</strong></h1>
+                <h5 className="Section4card-subtitle"><strong>{testimonial.subtitle}</strong></h5>
+                <p>{testimonial.content}</p>
+                <div className="Section4button-container">
+                <button className="Section4-button">{testimonial.button}</button>
+                </div>
               </div>
+            </div>
+          ))}
+        </div>
 
-              {/* Second Pricing Option */}
-              <div>
-                <Card className="Section4-card">
-                  <Card.Img
-                    variant="top"
-                    src={Dog}
-                    className="card-img img-thumbnail "
-                  />
-                  <Card.Body className="Section4card-body">
-                    <Card.Title>
-                      <h1>
-                        <strong>$59</strong>
-                      </h1>
-                    </Card.Title>
-                    <Card.Subtitle>
-                      <h2>
-                        <strong>Basic</strong>
-                      </h2>
-                    </Card.Subtitle>
-                    <Card.Text>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Ut eu risus sapien pellentesque.
-                      </p>
-                    </Card.Text>
-                    <div className="Section4button-container">
-                      <Button className="Section4card-button">Buy Now</Button>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-
-              {/* Third Pricing Option */}
-              <div>
-                <Card className="Section4-card">
-                  <Card.Img
-                    variant="top"
-                    src={Girl}
-                    className="card-img img-thumbnail "
-                  />
-                  <Card.Body className="Section4card-body">
-                    <Card.Title>
-                      <h1>
-                        <strong>$89</strong>
-                      </h1>
-                    </Card.Title>
-                    <Card.Subtitle>
-                      <h2>
-                        <strong>Pro</strong>
-                      </h2>
-                    </Card.Subtitle>
-                    <Card.Text>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Ut eu risus sapien pellentesque.
-                      </p>
-                    </Card.Text>
-                    <div className="Section4button-container">
-                      <Button className="Section4card-button">Buy Now</Button>
-                    </div>
-                  </Card.Body>
-                </Card>
-              </div>
-            </Slider>
-          </Col>
-        </Row>
-      </Container>
+        <div className="carousel-indicator">
+          {testimonials.map((_, index) => (
+            <div
+              key={index}
+              className={`indicator ${index === currentIndex ? "active" : ""}`}
+              onClick={() => handleIndicatorClick(index)}
+            ></div>
+          ))}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default Section4;
+export default TestimonialCarousel;
