@@ -1,11 +1,11 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from "./React-app/Home";
+import IndividualIntervalsExample from './React-app/Appl';
 function App() {
   return (
     <div className="App">
-<Home/>
+<IndividualIntervalsExample/>
     </div>
   );
 }

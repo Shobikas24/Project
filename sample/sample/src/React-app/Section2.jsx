@@ -11,12 +11,12 @@ import "./Css/Home.css";
 function Section2() {
   return (
     <div
-      className="Section2"
+      className="Section2 w-100 "
       style={{ backgroundImage: `url(${Background3})` }}
     >
       
-      <Container className="Section2-container mx-auto text-center  h-100" >
-      <Row style={{marginTop:"-40px",height:"100px" }}
+      <Container className="Section2-container  text-center mx-auto mb-5" >
+      <Row style={{height:"100px" }}
       
       id="Section2-container2"
       className="d-flex justify-content-center "
@@ -25,7 +25,7 @@ function Section2() {
         <strong>Our Services</strong>
       </h1>
     </Row>
-        <Row className="Section2-row d-flex justify-content-center align-items-center ">
+        <Row className="Section2-row d-flex justify-content-center align-items-center mb-5">
           <Col calssName="Section2-col1 ">
             <Card className="Section2-card">
               <div className="icon-container">

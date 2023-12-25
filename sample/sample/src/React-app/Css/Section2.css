@@ -9,20 +9,24 @@
 }
 .Section2 {
   max-width: 100%;
-  margin-top: -10px;
-  height: 800px;
+  /* height: 800px; */
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: double;
+  padding-top: 60%;
 }
 .Section2-container {
   align-content: center;
-  max-width: 100%;
   max-height: 500px;
   position: absolute;
-  top: 940px;
+  margin-top: -57%;
+  border-style: groove;
+  margin-bottom: 20%;
+  
 }
 .Section2 h1 strong {
   color: #263d5a;
@@ -38,8 +42,7 @@
   border-radius: 30px;
   overflow: visible;
   justify-content: center;
-  max-width: 90%;
-  margin-left: 5%;
+  max-width: 110%;
 }
 .Section2-col1,
 .Section2-col2,
@@ -93,55 +96,22 @@
 
 /* Media query */
 
-@media screen and (max-width: 1024px) {
-  .Section2-container {
-    margin-top: -4% !important;
+@media screen and (max-width:1024px) {
+  .Section2
+  {
+    padding-top: 70%;
   }
 }
 
-@media screen and (max-width: 995px) {
-  .Section2-container {
-    margin-top: 45% !important;
-  }
-}
+
 @media screen and (max-width: 780px) {
-  .Section2 {
-    height: 1600px !important;
-  }
+  
   .Section2-card {
     margin: 0 auto;
   }
-  .Section2-container {
-    margin-top: 60% !important;
-  }
 }
 
-@media screen and (max-width: 550px) {
-  .Section2-container {
-    margin-top: 85% !important;
-  }
-  #Section2-container2 {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 430px) {
-  .Section2-container {
-    margin-top: 100% !important;
-  }
-  .Section2 
-  {
-    height: 1400px !important;
-  }
-}
 
-@media screen and (max-width:320px){
-  .Section2
-  {
-    height: 1500px;
-  }
-  .Section2-container
-  {
-    margin-top: 112%!important;
-  }
-  
-}
+
+
+
