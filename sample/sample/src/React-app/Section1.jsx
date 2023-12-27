@@ -8,12 +8,15 @@ import "./Css/Section1.css";
 
 function Section1() {
   return (
-    <div className="Section1">
-      <Container fluid>
+    
+    <div className="Section1"
+    >
+      <Container fluid className="Section1-container">
         <Row className="Section1-row">
           <Col xs={12} lg={6} className="Section1-Col1">
             <Card className="Section1-card">
               <Card.Body className="Section1card-body">
+                <div className="Section1text-holder">
                 <Card.Title className="Section1card-title">
                   <h1>
                     <strong>Photographer</strong>
@@ -27,7 +30,10 @@ function Section1() {
                     pretium.
                   </p>
                 </Card.Text>
+                <div className="Section1button-holder">
                 <Button className="Section1card-button">Read more</Button>
+                </div>
+                </div>
               </Card.Body>
             </Card>
           </Col>
@@ -36,6 +42,7 @@ function Section1() {
           </Col>
         </Row>
       </Container>
+
     </div>
   );
 }

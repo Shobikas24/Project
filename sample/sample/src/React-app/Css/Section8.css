@@ -12,6 +12,11 @@
 }
 #Section8 {
   height: 750px;
+  background-repeat: no-repeat;
+  background-position: 50%50%;
+  background-size: cover;
+  display: block;
+  width: 100%;
 }
 #img-wrapper {
   height: 200px;
@@ -80,6 +85,11 @@
 
 #Section9 {
   height: 500px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  display: block;
 }
 .Section9-container,
 #Section9 {
@@ -154,6 +164,10 @@
   justify-content: center;
   width: 100%;
   height: 100%;
+  display: block;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .Section11-container {
   padding-top: 10%;

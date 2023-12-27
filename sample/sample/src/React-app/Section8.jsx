@@ -6,7 +6,7 @@ import "./Css/Section8.css";
 import Background2 from "./images/background2.jpg";
 import Background5 from "./images/background5.jpg";
 import Background7 from "./images/background7.jpg";
-import Background3 from "./images/background3.jpg";
+import Map from "./Map";
 import Imag1 from "./images/1.png";
 import Imag2 from "./images/2.png";
 import Imag3 from "./images/3.png";
@@ -94,6 +94,8 @@ function Section8() {
         </Container>
       </div>
 
+    <Map/>  
+    
       {/* Section11*/}
       <div
         className="w-100  bg-no-repeat h-100 d-flex align-items-center justify-content-center"

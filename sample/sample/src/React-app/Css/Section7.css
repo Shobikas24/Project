@@ -13,6 +13,9 @@
 .Section7 {
   max-width: 100%;
   height: 600px;
+  background-position: 50%50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Section7-container {
@@ -45,8 +48,7 @@
 }
 
 #Col-img {
-  max-width: 85%;
-  height: auto;
+width: 50%;  height: auto;
   border: none;
   border-radius: 20px;
   margin-left: 20px;

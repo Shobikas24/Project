@@ -1,7 +1,6 @@
 import Background5 from "./images/background5.jpg";
 
 
-import Section7 from "./Section7";
 import Section8 from "./Section8";
 import Header from "./Navbar";
 import Section1 from "./Section1";
@@ -10,20 +9,22 @@ import Section3 from "./Section3";
 import Section4 from "./Section4";
 import Section5 from "./Section5";
 import Section6 from "./Section6";
+import Section7 from "./Section7";
 import "./Css/Home.css";
-import GridBasicExample from "./Section12";
-
+import Section12 from "./Section12";
 function Home() {
   return (
     <>
-      <div className="Banner">
+      <div className="Banner"
+              style={{ backgroundImage: `url(${Background5})` }}
+              >
         {/* Section1 */}
 
-        <img
+        {/* <img
           className="Image1 img-fluid w-100 "
           src={Background5}
           alt="background5"
-        />
+        /> */}
 
         {/* Navbar */}
         <Header />
@@ -46,7 +47,7 @@ function Home() {
        <Section6/>
         <Section7 />
         <Section8 />
-        <GridBasicExample/>
+        <Section12/>
       </div>
     </>
   );

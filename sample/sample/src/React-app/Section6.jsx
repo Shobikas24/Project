@@ -12,7 +12,7 @@ function Section6()
         >
           <Container fluid>
             <Card className="Section6-card">
-              <Card.Body className="Section6card-body">
+              <Card.Body className="Section6card-body ">
                 <p className="Section6-p">PROGRESS</p>
                 <Card.Title>
                   <h1>
@@ -28,7 +28,7 @@ function Section6()
                     in metus. Mauris pulvinar, neque in porttitor faucibus.
                   </p>
                 </Card.Text>
-
+                <div className="mb-5 pb-5">
                 <div class="progress1 pt-4">
                   <div class="Section6title-wrap">
                     <div class="progressbar-title mbr-fonts-style display-4">
@@ -56,17 +56,18 @@ function Section6()
                   />
                 </div>
                 <div class="progress3 pt-4">
-                  <div class="Section6title-wrap">
+                  <div class="Section6title-wrap ">
                     <div class="progressbar-title mbr-fonts-style display-4">
                       <p>Art Photo</p>
                     </div>
                     <span>53%</span>
                   </div>
-                  <ProgressBar
+                  <ProgressBar 
                     style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}
                     animated
                     now={53}
                   />
+                </div>
                 </div>
               </Card.Body>
             </Card>

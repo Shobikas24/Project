@@ -8,41 +8,26 @@
   font-family: "Lexend", sans-serif;
 }
 .Banner {
-  min-width: 100%;
-}
-
-.Image1 {
-  max-width: 100%;
-  height: 750px;
+  width: 100%;
 }
 
 .Section3 {
-  max-width: 100%;
-  margin-top: 0;
+  width: 100%;
   height: 840px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50%50%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.Section2 {
-  margin-top: -10px;
 }
 
-.Section3 {
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .Section3-container,
 .Section3-Row {
   margin: 0 auto;
 }
-.Section3-Row {
-  max-width: 90%;
-}
+
 .Section3-Col1 {
   width: 40%;
 }
@@ -50,15 +35,15 @@
   width: 60%;
 }
 .Section3-Image {
-  max-width: 95%;
+  max-width: 100%;
   height: 550px;
   border-radius: 30px;
   align-items: flex-start;
   display: block;
   background-size: cover;
 }
-.Section3-card,
-.Section6-card {
+.Section3-card
+{
   max-width: 100%;
   height: 450px;
   margin: 0 auto;
@@ -83,30 +68,8 @@
 }
 
 /* Media query */
-@media screen and (max-width: 1340px) {
-  .Section2 {
-    margin-top: 0 auto;
-  }
-
-  .Section2 h1 strong {
-    margin-top: -20px;
-  }
-}
 
 @media screen and (max-width: 1024px) {
-  .Section2 {
-    height: 1200px;
-  }
-  .Section2-container {
-    margin-top: 160px;
-  }
-
-  .Section2-card {
-    width: 20rem;
-  }
-  #Section2-card3 {
-    margin: 0 auto;
-  }
   .Section3-cardbody {
     margin-top: 50px;
   }
@@ -115,30 +78,14 @@
   }
 }
 @media screen and (max-width: 995px) {
-  .Image1 {
-    height: 1200px;
-  }
-
-  .Header {
-    margin-top: -1700px;
-    max-width: 100%;
-  }
-
-  .Section2 {
-    height: 1200px;
-  }
-  .Section2 h1 strong {
-    margin-top: 450px;
-    margin-left: -40px;
-  }
-
-  .Section2-row,
   .Section3-Row,
   .Section3-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-left:-10px;
   }
   .Section3 {
     height: 1400px;
@@ -149,67 +96,30 @@
   .Section3card-Col2 {
     min-width: 100%;
   }
+  .Section3-Col2{
+    margin-top: 20px;
+  }
   .Section3-Image,
   .Section3-card {
-    min-width: 110%;
-    margin-left: -30px;
+    min-width: 100%;
+    margin: 0 auto;
+    margin-left: 0px;
   }
   .Section3-Image {
     height: 800px;
   }
 }
+@media  screen and (max-width:768px) {
+  .Section3-Col1,.Section3-Col2
+  {
+    margin-left:3px;
+    min-width: 100%;
 
-@media screen and (max-width: 900px) {
-  .Section2-row,
-  .Section1-image,
-  .Section1-card {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Section1card-button {
-    margin-left: 200px;
-  }
-  .Section2 {
-    height: 1400px;
-  }
-  .Section2 h1 strong {
-    margin-top: 400px;
-  }
-  .Section2-container {
-    margin-top: 750px;
-    margin-left: 10px;
-  }
-  .Section2-card,
-  .Section2-row.Section3-Row {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  #Section2-card3 {
-    margin: 0 auto;
   }
 }
 @media screen and (max-width: 620px) {
-  .Section1card-body {
-    margin-top: -10px;
-  }
-
-  .Section1card-button,
-  .Section1card-title h1 strong {
-    align-items: center;
-  }
-  .Section2 h1 strong {
-    font-size: 30px;
-  }
-  .Section3-Col1,
-  .Section3-Col2 {
-    min-width: 100%;
-  }
-  .Section3-card,
-  .Section3-Image {
-    min-width: 115%;
-  }
+ 
+ 
   .Section3-cardbody {
     margin-top: 20px;
     margin-left: 0;
@@ -224,61 +134,17 @@
   }
 }
 @media screen and (max-width: 430px) {
-  .Image1 {
-    height: 1200px;
-  }
-
-  .Section1-row {
-    margin-top: 520px;
-  }
-  .Section1card-body {
-    margin-top: -50px;
-  }
-  .Section1-image {
-    margin-top: -10px;
-  }
-  .Section1card-title h1 Strong {
-    margin-top: -50px;
-    margin-left: 50px;
-    font-size: 30px;
-  }
-  .Section1card-text {
-    font-size: 13px;
-    margin-left: -40px;
-  }
-  .Section1card-button {
-    align-items: center;
-    margin-left: 25%;
-    margin-top: 20px;
-  }
-  .Section1 h1 strong {
-    font-size: 2rem;
-  }
-  .Section2 h1 strong {
-    top: 850px;
-  }
-  .Section2-container {
-    top: 900px;
-  }
   .Section3 {
     height: 1200px;
   }
   .Section3-Image {
-    max-width: 130%;
-    margin-left: -45px;
     height: 550px;
   }
-  .Section3-card {
-    min-width: 130%;
-    margin-left: -45px;
+  .Section3-card,.Section3-Image
+  {
+    min-width: 100%;
   }
-  .Section1-card {
-    height: 500px;
-  }
-  .Section1-image,
-  .Section1-Col2 {
-    margin-top: 35px;
-  }
+
   .Section3-cardbody {
     margin-top: 0px;
   }
@@ -290,12 +156,6 @@
   }
 }
 @media screen and (max-width: 375px) {
-  .Section1card-button {
-    margin-top: -10px;
-  }
-  .Section1-image {
-    margin-top: -10px;
-  }
   .Section3 p {
     margin-top: 10px;
   }

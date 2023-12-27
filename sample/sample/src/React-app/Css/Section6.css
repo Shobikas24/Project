@@ -10,13 +10,22 @@
 }
 .Section6 {
   height: 700px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .Section6-card {
   width: 80%;
-  height: 550px;
+  height: 520px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 .Section6card-body {
   margin-left: 50px;

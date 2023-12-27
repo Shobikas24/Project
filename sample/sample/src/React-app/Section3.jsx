@@ -12,11 +12,12 @@ function Section3(){
           style={{ backgroundImage: `url(${Background8})` }}
         >
           <Container fluid className="Section3-container">
-            <Row className="Section3-Row">
-              <Col lg={6} md={10} xs={12} className="Section3-Col1">
+            <Container>
+            <Row className="Section3-Row ">
+              <Col lg={6} md={12} xs={12} className="Section3-Col1">
                 <img src={Img2} alt="Img2" className="Section3-Image" />
               </Col>
-              <Col lg={6} md={10} xs={12} className="Section3-Col2">
+              <Col lg={6} md={12} xs={12} className="Section3-Col2">
                 <Card className="Section3-card">
                   <Card.Body className="Section3-cardbody">
                     <Card.Title>
@@ -49,6 +50,7 @@ function Section3(){
                 </Card>
               </Col>
             </Row>
+            </Container>
           </Container>
         </div>
 

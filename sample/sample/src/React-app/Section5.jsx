@@ -15,12 +15,13 @@ function Section5(){
         >
           <Container fluid>
             <Row className="Section5-row1">
-              <div className="Section5text-container">
+              <div className="Section5text-container pt-5 pb-3 ml-3">
                 <h5>OUR WORKS</h5>
-                <h3>Lorem ipsum dolor sit amet.</h3>
+                <h3 className="pt-1">Lorem ipsum dolor sit amet.</h3>
               </div>
             </Row>
-            <Row className="Section5image-container">
+            <div  className="mb-5 pb-5">
+            <Row className="Section5image-container mb-2">
               <Col
                 className="Section5row2-Col "
                 xs={12}
@@ -63,6 +64,7 @@ function Section5(){
                 </div>
               </Col>
             </Row>
+            </div>
           </Container>
         </div>
 
