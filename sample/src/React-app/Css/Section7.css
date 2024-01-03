@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.Section7 {
+  max-width: 100%;
+  background-position: 50%50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Section7-container {
+ padding-top: 6%;
+ padding-bottom: 6%;
+}
+
+.Section7text-container {
+  color: #263d5a;
+}
+.Section7text-container h2 strong {
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+#text2 {
+  margin-top: -40px;
+}
+#Section7-col1,
+.Section7-col2 {
+  width: 50%;
+}
+.Section7-col2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordtion-item {
+  background-color: transparent;
+  border-style: dotted;
+  border: none;
+  border-bottom: 1px solid #e4e4e4}
+
+.accordtion-item .accordion-button {
+  background-color: transparent;
+  color: #fff; 
+}
+.accordtion-item .accordion-collapse {
+  background-color: transparent;
+}
+.accordion-header
+{
+  border: none;
+}
+
+#Col-img {
+width: 90%; 
+ height: auto;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+#Section7-row {
+  /* width: 90%; 
+  height: 84%; */
+  border-radius: 30px;
+  transition: height 0.3 ease;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.Section7-h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.Section7 p ,.Section7-h4
+{
+  margin-left: -20px;
+  color: #263d5a;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  #text2 {
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 995px){
+  .Col-image,
+  .Section7-col2 {
+    min-width: 100%;
+  }
+  /* .Section7 {
+    height: 1035px;
+  } */
+  #Section7-row
+  {
+    margin: 0 auto;
+  }
+  .Section7-col2 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+ 
+
+ 
+}
+
+@media screen and (max-width: 730px) {
+  #Col-img {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+  .Section7text-container {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  #Section7-row {
+    min-width: 100%;
+    margin-left: 0 auto;
+  }
+ 
+ 
+}
+@media screen and (max-width: 480px) {
+  .Section7text-container h2 strong {
+    font-size: 2rem;
+  }
+ 
+  
+}
+
+@media screen and (max-width: 348px) {
+  .Section7text-container h2 strong {
+    font-size: 1.8rem;
+  }
+
+}

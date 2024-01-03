@@ -1,0 +1,80 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+  }
+  .Section4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+  .Section4 h1 strong
+ {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-top: 20px;
+ }
+  .Section4 h2 strong
+  {
+   font-size: 1.7rem;
+  }
+  
+  .Section4card-button {
+    padding: 15px 35px;
+    border-radius: 30px;
+    margin-left: 0px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-style: normal;
+    background-color: #a148ff;
+    background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+  }
+  .Section4button-container:hover {
+    transform: translateY(-3px);
+    transition: all 0.3s;
+    border-color: #0a53be;
+  }
+ .Section4button-container
+ {
+  margin-bottom: 3rem;
+ }
+  .Section4text-container
+  {
+    text-align: center;
+    color: #263d5a;
+  }
+  
+  .Section4-card 
+  {
+    border: none;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+    border-radius: 30px;
+    color: #263d5a;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+    backdrop-filter: blur(3.5px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .Section4text-holder
+  {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width:995px)
+  {
+    #Section4-col3
+    {
+        margin:0 auto;
+    }
+  }

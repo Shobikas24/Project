@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+.Section1 {
+  width: 100%;
+  position: relative;
+  background-position: 50%50%;
+  padding-top: 0rem;
+  padding-bottom: 8rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Section1-Col1,
+.Section1-Col2 {
+  max-width: 50%;
+}
+.Section1-card {
+  width: 135%;
+  margin: 0 auto;
+  max-width: 200%;
+  border: none;
+  color: black;
+  border-color:2px solid white;
+  border-radius: 30px;
+  /* background-color: rgba(255, 255, 255, 0.6); */
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+ 
+  backdrop-filter: blur(3.5px);
+}
+.Section1text-holder {
+  width: 90%;
+  margin-left: 35px;
+}
+.Section1card-title {
+  color: black;
+  opacity: 1;
+  margin-top: 60px;
+}
+.Section1card-title h1 strong {
+  font-weight: bold;
+  color: #263d5a;
+  font-size: 70px;
+}
+.Section1card-text {
+  margin-top: 30px;
+}
+.Section1card-text p {
+  font-size: 1.3rem;
+  color: #263d5a;
+  opacity: 1;
+  font-weight: 400;
+ 
+}
+.Section1button-holder {
+  margin-bottom: 15%;
+  margin-top: 40px;
+}
+
+.Section1-image {
+  max-width: 130%;
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 50px;
+  margin-top: 40px;
+  margin-left: -37px;
+}
+
+.Section1card-button {
+  padding: 16px 40px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-style: normal;
+  background-color: #a148ff;
+  background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+}
+
+.Section1card-button:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s;
+  border-color: #0a53be;
+}
+
+.Section1-container {
+  margin-top: 3%;
+}
+/* Media Query */
+
+@media screen and (max-width: 1320px) {
+  .Section1-image {
+    max-width: 120%;
+  }
+}
+@media screen and (max-width:1270px){
+  .Section1-image {
+    max-width: 112%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .Section1card-title {
+    font-size: 55px;
+  }
+  /* .Section1-image {
+    max-width: 110%;
+  } */
+}
+
+@media screen and (max-width: 995px) {
+  .Section1-Col1,
+  .Section1-Col2 {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .Section1text-holder {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .Section1-card {
+    margin-bottom: -0%;
+    max-width: 100%;
+  }
+
+  .Section1card-text p {
+    font-size: 1.5rem;
+  }
+  .Section1-image {
+    max-width: 100%;
+    height: 490px;
+    align-items: center;
+    margin-left: 0%;
+  }
+  .Section1button-holder {
+    text-align: center;
+  }
+  .Section1card-button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Section1card-title h1 strong {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Section1-card,
+  .Section1-image {
+    min-width: 100%;
+    margin-left: -2px;
+  }
+  .Section1card-text p {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Section1card-text p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .Section1card-title h1 Strong {
+    font-size: 26px;
+  }
+  .Section1card-text p {
+    font-size: 17px;
+  }
+}

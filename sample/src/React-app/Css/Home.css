@@ -1,0 +1,100 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+.Banner {
+  width: 100%;
+}
+.Section3-container{
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.Section3 {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.Section3-Image {
+  max-width: 100%;
+  border-radius: 30px;
+  align-items: flex-start;
+  display: block;
+  background-size: cover;
+}
+.Section3-card
+{
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3.5px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 30px;
+}
+.Section3-cardbody {
+  margin-top: 30px;
+  text-align: left;
+}
+.Section3 h1 strong {
+  font-size: 4.4rem;
+  color: #263d5a;
+}
+.Section3 p {
+  margin-top: 20px;
+  color: #263d5a;
+}
+.image-wrapper{
+  margin: 0 auto;
+}
+
+/* Media query */
+
+@media screen and (max-width:767px) {
+  .Section3-cardbody{
+     text-align: center;
+     padding: 2px;
+   } 
+}
+ @media screen and (max-width:2000px) {
+  .image-wrapper{
+    margin-top: 0%;
+}
+ }
+ @media screen and (max-width:1200px) {
+  .image-wrapper{
+    margin-top: 20%;
+}
+ }
+
+.Contact{
+  width:100%;
+  background-repeat: no-repeat;
+  background-position: 50%50%;
+}
+
+ .contact-icon
+{
+    width:100%;
+    height: 50px;
+    text-align: center;
+}
+.Contact-text
+{
+    height: 60px;
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}

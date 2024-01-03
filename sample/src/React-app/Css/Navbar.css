@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+.Header {
+  max-width: 100%;
+}
+.Brand {
+  color: #263d5a;
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 30px;
+}
+.Brand:hover {
+  cursor: pointer;
+  color: #000000;
+}
+.link-style {
+  text-decoration: none;
+  color: #263d5a;
+
+}
+.Links {
+  /* font-weight: 600; */
+  font-size: 1.3rem;
+  padding: 20px 25px;
+}
+.Links:hover {
+  color: black;
+}
+#nav-button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-style: normal;
+  margin-top: 10px;
+  background-color: #a148ff;
+  background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
+}
+#nav-button:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s;
+  border-color: #0a53be;
+}
+
+/* Media query */
+
+@media screen and (max-width:990px){
+  #Items
+{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+#nav-button
+{
+  margin-top: 450px;
+  float:right;
+}
+}
