@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-// import { BsCart4 } from "react-icons/bs";
+import { BsCart4 } from "react-icons/bs";
 import "./Css/Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -37,7 +37,7 @@ function Header() {
               <h5 className="Links">Contacts</h5>
             </Link>
             <Link to="/Cart" className="link-style">
-              <h5 className="Links">{/* <BsCart4 /> */}</h5>
+              <h5 className="Links"><BsCart4 /></h5>
             </Link>
           </Nav>
 

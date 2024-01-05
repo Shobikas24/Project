@@ -3,9 +3,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-// import { HiOutlineLightBulb } from "react-icons/hi";
-// import { FaRegCircleUser } from "react-icons/fa6";
-// import { VscSymbolColor } from "react-icons/vsc";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { FaRegCircleUser } from "react-icons/fa6";
+import { VscSymbolColor } from "react-icons/vsc";
 import "./Css/Section2.css";
 
 function Section2() {
@@ -28,7 +28,7 @@ function Section2() {
               <Col lg={4} md={6} xs={12}>
                 <Card className="Section2-card">
                   <div className="icon-container mt-5">
-                    {/* <HiOutlineLightBulb className="bulb" /> */}
+                    <HiOutlineLightBulb className="bulb" />
                   </div>
                   <Card.Body>
                     <Card.Title className="mt-4 Section2-title">
@@ -47,7 +47,7 @@ function Section2() {
               <Col lg={4} md={6} xs={12}>
                 <Card className="Section2-card">
                   <div className="icon-container mt-5">
-                    {/* <FaRegCircleUser className="user" /> */}
+                    <FaRegCircleUser className="user" />
                   </div>
                   <Card.Body>
                     <Card.Title className="mt-4 Section2-title">
@@ -66,7 +66,7 @@ function Section2() {
               <Col lg={4} md={6} xs={12} className="Section2-col3">
                 <Card className="Section2-card" id="Section2-card3">
                   <div className="icon-container mt-5">
-                    {/* <VscSymbolColor className="colorpallet" /> */}
+                    <VscSymbolColor className="colorpallet" />
                   </div>
                   <Card.Body>
                     <Card.Title className="mt-4 Section2-title">
