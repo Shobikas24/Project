@@ -17,7 +17,7 @@ function Picture1() {
         <Container className="pt-5 pb-5">
           <Row>
             <Col lg={6} md={6} xs={12}>
-              <img src={Photo} alt="photo" className="w-100 img-thumbnail" />
+              <img src={Photo} alt="i1" className="w-100 img-thumbnail" />
             </Col>
             <Col className="pt-5 d-flex " lg={6} md={6} xs={12}>
               <div>

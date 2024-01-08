@@ -1,125 +1,76 @@
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../action/cartAction";
+
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Background4 from "./images/background4.jpg";
-import Dog from "./images/dog.png";
-import Nature from "./images/nature.jpg";
-import Photo from "./images/photo.webp";
-import "./Css/Section4.css";
-
-
-
 function Section4() {
+  const dispatch = useDispatch();
+  const courses1 = useSelector((state) => state.courses1);
+
   return (
     <div
-      className="Section4 "
+      className="Section4 w-100"
       style={{ backgroundImage: `url(${Background4})` }}
     >
-      <Container fluid className="Section4-container">
-        <Row className="Section4text-container ">
-          <h5 className="mt-5 pt-5">OUR PRICING</h5>
-          <h2 className="pb-2">
+      <Container className="Section4-container w-100">
+        <Row className=" text-center">
+          <div className="d-inline Section4text-container">
+            
+          <h5 >OUR PRICING</h5>
+          <h2>
             <strong>Lorem ipsum dolor sit amet consectetur.</strong>
           </h2>
+          </div>
         </Row>
-      </Container>
-      <Container>
-        <Row>
-          <Col className="Section4-col" lg={4} md={6} xs={12}>
-            <Card  className="Section4-card">
-              <Card.Img
-                variant="top"
-                src={Photo}
-                className="img-thumbnail"
-                style={{ borderRadius: "30px" }}
-              />
-              <Card.Body>
-                <div className="Section4text-holder">
-                <Card.Title>
-                  {" "}
-                  <h1>
-                    <strong>$39</strong>
-                  </h1>
-                </Card.Title>
-                <h2>
-                  <strong>Start</strong>
-                </h2>
-                <Card.Text>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    eu risus sapien pellentesque.
-                  </p>
-                </Card.Text>
-                <div className="Section4button-container">
-                  <Button className="Section4card-button">Buy Now</Button>
-                </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={4} md={6} xs={12}>
-            <Card className="Section4-card">
-              <Card.Img
-                variant="top"
-                src={Dog}
-                className="img-thumbnail"
-                style={{ borderRadius: "30px" }}
-              />
-              <Card.Body>
-                <div className="Section4text-holder">
-                  <Card.Title>
-                    <h1>
-                      <strong>$59</strong>
-                    </h1>
-                  </Card.Title>
-                  <h2>
-                    <strong>Basic</strong>
-                  </h2>
-                  <Card.Text>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut eu risus sapien pellentesque.
-                    </p>
-                  </Card.Text>
-                  <div className="Section4button-container">
-                    <Button className="Section4card-button">Buy Now</Button>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col lg={4} md={6} xs={12} id="Section4-col3">
-            <Card  className="Section4-card">
-              <Card.Img
-                variant="top"
-                src={Nature}
-                className="img-thumbnail"
-                style={{ borderRadius: "30px" }}
-              />
-              <Card.Body>
-                <div className="Section4text-holder">
-                  <Card.Title>
-                    <h1>
-                      <strong>$89</strong>
-                    </h1>
-                  </Card.Title>
-                  <h2>
-                    <strong>Pro</strong>
-                  </h2>
-                  <Card.Text>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut eu risus sapien pellentesque.
-                    </p>
-                  </Card.Text>
-                  <div className="Section4button-container">
-                    <Button className="Section4card-button">Buy Now</Button>
-                  </div>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+        <ul className="product-list mx-0 px-0">
+          {courses1.map((product) => (
+            <li key={product.id} className="product-card">
+              <Row g={4} className="popularc">
+                <Col
+                  lg={4}
+                  md={6}
+                  xs={12}
+                  className="cards-col  w-100 "
+                >
+                  <Card className="Section4-card">
+                    <div className="popular-course overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.price}
+                        className="course-img position-reletive img-thumbnail w-100"  style={{borderRadius:"30px"}}
+                      />
+                    </div>
+                    <div className="Section4text-holder mt-4">
+                      <h1>
+                        <strong  style={{ fontWeight: "bold" }}>
+                          {" "}
+                          ₹{product.price}
+                        </strong>
+                      </h1>
+
+                      <div className="product-details ">
+                        <h5 className="product-name ">{product.title}</h5>
+                        
+                        <p>{product.paragraph}</p>
+                        <div className="Section4button-container">
+                          <button
+                            className="Section4card-button "
+                            onClick={() => dispatch(addToCart(product))}
+                          >
+                            Buy Now
+                          </button>{" "}
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </Col>
+              </Row>
+            </li>
+          ))}
+        </ul>
       </Container>
     </div>
   );

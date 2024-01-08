@@ -3,14 +3,15 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./React-app/Home";
+import './React-app/Css/Section4.css';
 import Contact from './React-app/Components/Contact';
 import About from './React-app/Components/About';
 import Message from './React-app/Components/Message';
-import Cart from "./React-app/Components/Cart";
 import Services from './React-app/Components/Services';
 import Picture1 from './React-app/Picture1';
 import Picture2 from './React-app/Picture2';
 import Picture3 from './React-app/Picture3';
+import Cart from "./React-app/Components/Cart";
 
 function App() {
   return (
