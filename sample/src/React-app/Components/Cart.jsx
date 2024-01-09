@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromCart } from "../../action/cartAction";
 import { Link } from "react-router-dom";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Background5 from "../images/background5.jpg";
 
 function Cart() {
@@ -34,7 +36,7 @@ function Cart() {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${Background5})` }}>
+    <div style={{ backgroundImage: `url(${Background5})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
       <div className="container text-center align-items-center ">
         <div className="cart  text-center">
           <h1>Shopping Cart</h1>
@@ -45,19 +47,24 @@ function Cart() {
             {cart.map((item) => (
               <li
                 key={item.id}
-                className="card cart-item ms-5 mb-5"
-                style={{ display: "flex", width: "40rem" }}
+                className="card cart-item mt-5 mb-5"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
               >
-                <div className="row d-flex">
-                  <div className="col cart-item-content">
+                <Row>
+                  <Col lg={4} md={6} xs={12} >
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="cart-image mt-3 mb-3 img-thumbnail "
+                      className="cart-image mt-5 mb-2 img-thumbnail "
                     />
-                  </div>
-                  <div className="col cart-details ">
-                    <div className="mt-2">
+                  </Col>
+                  <Col>
+                    <div className="mt-5">
                       <span className="cart-name">{item.name}</span>
                       <br />
                       <div className="cart-total">
@@ -67,27 +74,36 @@ function Cart() {
                         className="remove-btn mt-4 mb-4"
                         onClick={() => handleRemoveFromCart(item.id, item.name)}
                       >
-                        Remove from Cart
+                        Remove
                       </button>
                     </div>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
               </li>
             ))}
           </ul>
           <h2>Total Fees: ₹{calculateTotal()}</h2>
-          {isCheckout ? (
-            <div className="alert alert-success mt-2">
-              Your fees has been successfully Paid!
+
+          {cart.length === 0 && (
+            <div className="alert alert-danger mt-2">
+              Add Your Favorite Items to the Cart
             </div>
-          ) : (
+          )}
+
+          {cart.length > 0 && (
             <button
               onClick={() => setIsCheckout(true)}
-              className="checkout-btn mb-5 "
+              className="checkout-btn mb-5"
             >
               Checkout
             </button>
           )}
+
+          {isCheckout ? (
+            <div className="alert alert-success mt-2">
+              Your fees have been successfully paid!
+            </div>
+          ) : null}
           {isCheckout ? (
             <div className="mb-5 pb-5">
               <Link to="/" className="link-btn ">

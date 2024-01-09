@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Css/Section1.css";
+import { Link } from "react-router-dom";
+
 
 function Section1() {
   return (
@@ -32,7 +34,9 @@ function Section1() {
                   </p>
                 </Card.Text>
                 <div className="Section1button-holder">
+                  <Link to="/Readmore">
                 <Button className="Section1card-button">Read more</Button>
+                </Link>
                 </div>
                 </div>
               </Card.Body>

@@ -27,7 +27,6 @@
 
 }
 .Links {
-  /* font-weight: 600; */
   font-size: 1.3rem;
   padding: 20px 25px;
 }
@@ -52,6 +51,7 @@
   transition: all 0.3s;
   border-color: #0a53be;
 }
+
 
 /* Media query */
 

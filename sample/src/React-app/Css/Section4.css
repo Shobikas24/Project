@@ -103,17 +103,21 @@
 .cart-list {
   list-style: none;
   padding: 0;
+  width:60%;
+  display: block;
+  margin: 0 auto;
 }
-.cart-details
+.cart-image
 {
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .cart-name {
   font-size: 20px;
   font-weight: bold;
+}
+.cart-item
+{
+  border:2px solid red;
 }
 .cart-price {
   font-size: 25px;
@@ -131,6 +135,7 @@
 }
 
 
+
 .cart h2 {
   font-weight: bolder;
   font-size: 50px;
@@ -145,7 +150,7 @@
 /* Media Query */
 
 @media screen and (max-width:995px){
-  .product-list
+  .product-list,.cart-list
 
   {
     max-width:100%;

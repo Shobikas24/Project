@@ -5,9 +5,12 @@ import Container from "react-bootstrap/Container";
 import { BsCart4 } from "react-icons/bs";
 import "./Css/Navbar.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Header() {
-  
+  const cart = useSelector((state) => state.cart);
+  const cartItemCount = Array.isArray(cart) ? cart.length : 0;
+
   return (
     <Navbar expand="lg" className="Header sticky-top">
       <Container fluid>
@@ -38,7 +41,18 @@ function Header() {
               <h5 className="Links">Contacts</h5>
             </Link>
             <Link to="/Cart" className="link-style">
-              <h5 className="Links"><BsCart4 /></h5>
+              <div className="Links">
+                <BsCart4  style={{marginTop:'-10px'}}/>
+                <div
+                  className="badge"
+                  style={{
+                    color: "black",
+                    marginLeft: "-11px",
+                  }}
+                >
+                  {cartItemCount}
+                </div>
+              </div>
             </Link>
           </Nav>
 

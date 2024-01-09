@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
 }
 
 .Section1-Col1,
@@ -31,7 +32,7 @@
   color: black;
   border-color:2px solid white;
   border-radius: 30px;
-  /* background-color: rgba(255, 255, 255, 0.6); */
+  box-shadow: 2px solid black;
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
  
   backdrop-filter: blur(3.5px);
@@ -74,7 +75,7 @@
   margin-left: -37px;
 }
 
-.Section1card-button {
+.Section1card-button,.Goback-btn{
   padding: 16px 40px;
   border-radius: 30px;
   color: white;
@@ -87,7 +88,7 @@
   background: linear-gradient(90deg, #a148ff 0%, #ff6f45 100%);
 }
 
-.Section1card-button:hover {
+.Section1card-button:hover ,.Goback-btn:hover {
   transform: translateY(-3px);
   transition: all 0.3s;
   border-color: #0a53be;
