@@ -42,7 +42,7 @@ function Header() {
             </Link>
             <Link to="/Cart" className="link-style">
               <div className="Links">
-                <BsCart4  style={{marginTop:'-10px'}}/>
+                <BsCart4 style={{ marginTop: "-10px" }} />
                 <div
                   className="badge"
                   style={{

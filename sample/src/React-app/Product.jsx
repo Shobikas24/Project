@@ -2,7 +2,8 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../action/cartAction';
 
-function Product() {
+function Product() 
+{
   const dispatch = useDispatch();
   const products = useSelector(state => state.products);
 

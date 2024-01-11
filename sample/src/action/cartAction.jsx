@@ -1,13 +1,13 @@
 export const addToCart = (product) => {
     return {
       type: 'ADD_TO_CART',
-      payload: product
+      payload: product,
     }
   }
   
   export const removeFromCart = (productId) => {
     return {
       type: 'REMOVE_FROM_CART',
-      payload: productId
+      payload: productId,
     }
   }

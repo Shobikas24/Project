@@ -7,6 +7,7 @@ import Col from "react-bootstrap/Col";
 import Background5 from "../images/background5.jpg";
 import { HiDownload } from "react-icons/hi";
 
+
 function Cart() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
