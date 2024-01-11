@@ -96,9 +96,8 @@
 /* cart */
 .cart h1 {
   font-weight: bolder;
-  font-size: 50px;
-
-  color: rgb(22, 2, 41);
+  font-size: 40px;
+  color:black;
 }
 .cart-list {
   list-style: none;
@@ -138,10 +137,14 @@
 
 .cart h2 {
   font-weight: bolder;
-  font-size: 50px;
-  color: rgb(22, 2, 41);
+  font-size: 35px;
+  color: black;
 }
-
+.download-link
+{
+  text-decoration: none;
+  color:#263d5a;
+}
 
 
 

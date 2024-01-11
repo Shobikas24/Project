@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Background5 from "../images/background5.jpg";
+import { HiDownload } from "react-icons/hi";
 
 function Cart() {
   const dispatch = useDispatch();
@@ -36,7 +37,13 @@ function Cart() {
   };
 
   return (
-    <div style={{ backgroundImage: `url(${Background5})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+    <div
+      style={{
+        backgroundImage: `url(${Background5})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="container text-center align-items-center ">
         <div className="cart  text-center">
           <h1>Shopping Cart</h1>
@@ -56,12 +63,25 @@ function Cart() {
                 }}
               >
                 <Row>
-                  <Col lg={4} md={6} xs={12} >
+                  <Col lg={4} md={6} xs={12}>
                     <img
                       src={item.image}
                       alt={item.name}
                       className="cart-image mt-5 mb-2 img-thumbnail "
                     />
+
+                    <div className="mt-5 mb-5">
+                      <a
+                        href={item.image}
+                        download={`cart_item_${item.id}.jpg`}
+                        className="download-link"
+                      >
+                        <span>
+                          <HiDownload />
+                        </span><br></br>
+                        Download Image
+                      </a>
+                    </div>
                   </Col>
                   <Col>
                     <div className="mt-5">
@@ -95,7 +115,7 @@ function Cart() {
               onClick={() => setIsCheckout(true)}
               className="checkout-btn mb-5"
             >
-              Checkout
+              Pay Now
             </button>
           )}
 
