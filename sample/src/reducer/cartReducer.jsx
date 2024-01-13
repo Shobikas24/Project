@@ -1,6 +1,3 @@
-
-
-
 import Photo from "../React-app/images/photo.webp";
 import Dog from "../React-app/images/dog.png";
 import Nature from "../React-app/images/nature.jpg";
